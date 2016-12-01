@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport'>
+    <meta content='A fully featured admin theme which can be used to build CRM, CMS, etc.' name='description'>
+    <meta content='Coderthemes' name='author'>
+    <link href='assets/images/favicon_1.ico' rel='shortcut icon'>
+    <title></title>
+    <!-- Morris Chart CSS -->
+    <link href="../../../../stylesheets/main.css?1476255701" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>  <![endif]-->
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script src='assets/js/modernizr.min.js'></script>
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class='browsehappy'>
+        You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class='container'>
+      <header id='topnav'>
+        <div class='topbar-main'>
+          <div class='container'>
+            <!-- Logo container -->
+            <div class='logo'>
+              <a class='logo' href='index.html'>
+                <span>SchulerTrack</span>
+              </a>
+            </div>
+            <!-- End Logo container -->
+            <div class='menu-extras'>
+              <ul class='nav navbar-nav navbar-right pull-right'>
+                <li class='navbar-c-items'>
+                  <form class='navbar-left app-search pull-left hidden-xs' role='search'>
+                    <input class='form-control' placeholder='Search...' type='text' value='Search...'>
+                    <a href=''>
+                      <i class='fa fa-search'></i>
+                    </a>
+                  </form>
+                </li>
+                <li class='dropdown navbar-c-items'>
+                  <a aria-expanded='true' class='dropdown-toggle waves-effect waves-light' data-target='#' data-toggle='dropdown' href='#'>
+                    <i class='icon-bell'></i>
+                    <span class='badge badge-xs badge-danger'>3</span>
+                  </a>
+                  <ul class='dropdown-menu dropdown-menu-lg'>
+                    <li class='notifi-title'><span class='label label-default pull-right'>New 3</span>Notification
+                    </li>
+                    <li class='list-group slimscroll-noti notification-list'>
+                      <!-- list item -->
+                      <a class='list-group-item' href='javascript:void(0);'>
+                        <div class='media'>
+                          <div class='pull-left p-r-10'>
+                            <em class='fa fa-bell-o noti-custom'></em>
+                          </div>
+                          <div class='media-body'>
+                            <h5 class='media-heading'>Updates</h5>
+                            <p class='m-0'>
+                              <small>
+                                There are
+                                <span class='text-primary font-600'>2</span>
+                                new updates available
+                              </small>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- list item -->
+                      <a class='list-group-item' href='javascript:void(0);'>
+                        <div class='media'>
+                          <div class='pull-left p-r-10'>
+                            <em class='fa fa-user-plus noti-pink'></em>
+                          </div>
+                          <div class='media-body'>
+                            <h5 class='media-heading'>New student registered</h5>
+                            <p class='m-0'>
+                              <small>You have 10 unread messages</small>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                      <!-- list item -->
+                      <a class='list-group-item' href='javascript:void(0);'>
+                        <div class='media'>
+                          <div class='pull-left p-r-10'>
+                            <em class='fa fa-diamond noti-primary'></em>
+                          </div>
+                          <div class='media-body'>
+                            <h5 class='media-heading'>A new order has been placed A new order has been placed</h5>
+                            <p class='m-0'>
+                              <small>There are new settings available</small>
+                            </p>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a class='list-group-item text-right' href='javascript:void(0);'>
+                        <small class='font-600'>See all notifications</small>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class='dropdown navbar-c-items'>
+                  <a aria-expanded='true' class='dropdown-toggle waves-effect waves-light profile' data-toggle='dropdown' href=''>
+                    <img alt='user-img' class='img-circle' src='https://yt3.ggpht.com/-EwMh7uSllo8/AAAAAAAAAAI/AAAAAAAAAAA/fNt15Y1I-5I/s900-c-k-no-rj-c0xffffff/photo.jpg'>
+                  </a>
+                  <ul class='dropdown-menu'>
+                    <li>
+                      <a href='javascript:void(0)'>
+                        <i class='ti-user text-custom m-r-10'></i>
+                        Profile
+                      </a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>
+                        <i class='ti-settings text-custom m-r-10'></i>
+                        Settings
+                      </a>
+                    </li>
+                    <li>
+                      <a href='javascript:void(0)'>
+                        <i class='ti-lock text-custom m-r-10'></i>
+                        Lock screen
+                      </a>
+                    </li>
+                    <li class='divider'></li>
+                    <li>
+                      <a href='javascript:void(0)'>
+                        <i class='ti-power-off text-danger m-r-10'></i>
+                        Logout
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <div class='menu-item'>
+                <!-- Mobile menu toggle -->
+                <a class='navbar-toggle'>
+                  <div class='lines'>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </a>
+                <!-- End mobile menu toggle -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav>
+          <div class='navbar-custom'>
+            <div class='container'>
+              <div id='navigation'>
+                <!-- Navigation Menu -->
+                <ul class='navigation-menu'>
+                  <li>
+                    <a href='#'><i class='md md-dashboard'></i>Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-home.html'><i class='md md-dashboard'></i>Dashboard
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-enroll-a-student.html'><i class='md md-color-lens'></i>Enroll a Student
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-class-management.html'><i class='md md-layers'></i>Class Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-student-list.html'><i class='md md-class'></i>Student List
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-teacher-list.html'><i class='md md-pages'></i>Teacher List
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-records-management.html'><i class='md md-color-lens'></i>Records Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-transaction-management.html'><i class='md md-layers'></i>Transaction Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href='admin-school-bus-scheduling.html'><i class='md md-class'></i>School Bus Scheduling
+                    </a>
+                  </li>
+                </ul>
+                <!-- End navigation menu -->
+              </div>
+            </div>
+            <!-- end container -->
+          </div>
+          <!-- end navbar-custom -->
+          <!-- End Navigation Bar -->
+        </nav>
+      </header>
+      <div id='main-content' role='main'>
+        <p><a href="http://waffle.io/smashingboxes/OwlCarousel2"><img alt="Stories in Ready" src="https://badge.waffle.io/smashingboxes/OwlCarousel2.png?label=ready&amp;title=Ready" /></a>
+        <a href="https://travis-ci.org/smashingboxes/OwlCarousel2"><img alt="Build Status" src="https://travis-ci.org/smashingboxes/OwlCarousel2.svg" /></a></p>
+        
+        <h2 id="announcement">Announcement.</h2>
+        
+        <p>Big announcement comming about maintainance of this project.  Stay tuned!</p>
+        
+        <h2 id="owl-carousel-2-beta">Owl Carousel 2 Beta</h2>
+        
+        <p>Touch enabled <a href="http://jquery.com/">jQuery</a> plugin that lets you createbeautiful responsive carousel slider. <strong>To get started, check out http://owlcarousel.owlgraphic.com.</strong></p>
+        
+        <p>Please consider that the project is still in beta. The current status of the milestones can be found <a href="https://github.com/OwlFonk/OwlCarousel2/milestones">here</a>. If you want to use the <a href="https://github.com/OwlFonk/OwlCarousel2/archive/develop.zip">latest development</a> see <a href="#building">building</a>.</p>
+        
+        <h2 id="quick-start">Quick start</h2>
+        
+        <p>Download the <a href="http://owlcarousel.owlgraphic.com/download/owl.carousel.zip">latest release</a> and put the required stylesheet at the <a href="https://developer.yahoo.com/performance/rules.html#css_top">top</a> of your markup:</p>
+        
+        <p>```html</p>
+        <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css" />
+        
+        <p>```</p>
+        
+        <p>Put the script at the <a href="https://developer.yahoo.com/performance/rules.html#js_bottom">bottom</a> of your markup right after jQuery:</p>
+        
+        <p><code>html
+        &lt;script src="jquery.min.js"&gt;&lt;/script&gt;
+        &lt;script src="owlcarousel/owl.carousel.min.js"&gt;&lt;/script&gt;
+        </code></p>
+        
+        <p>Wrap your items (<code>div</code>, <code>a</code>, <code>img</code>, <code>span</code>, <code>li</code> etc.) with a container element (<code>div</code>, <code>ul</code> etc.). Only the class <code>owl-carousel</code> is mandatory to apply proper styles:</p>
+        
+        <p>```html</p>
+        <div class="owl-carousel">
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+          <div> Your Content </div>
+        </div>
+        <p>```</p>
+        
+        <p>Call the <a href="http://learn.jquery.com/plugins/">plugin</a> function and your carousel is ready.</p>
+        
+        <p><code>javascript
+        $(document).ready(function(){
+          $('.owl-carousel').owlCarousel();
+        });
+        </code></p>
+        
+        <h2 id="documentation">Documentation</h2>
+        
+        <p>The documentation, included in this repo in the root directory, is built with <a href="http://assemble.io/">Assemble</a> and publicly available at http://owlcarousel.owlgraphic.com. The documentation may also be run locally.</p>
+        
+        <h2 id="building">Building</h2>
+        
+        <p>This package comes with <a href="http://gruntjs.com/">Grunt</a> and <a href="http://bower.io/">Bower</a>. The following tasks are available:</p>
+        
+        <ul>
+          <li><code>default</code> compiles the CSS and JS into <code>/dist</code> and builds the doc.</li>
+          <li><code>dist</code> compiles the CSS and JS into <code>/dist</code> only.</li>
+          <li><code>watch</code> watches source files and builds them automatically whenever you save.</li>
+          <li><code>test</code> runs <a href="http://www.jshint.com/">JSHint</a> and <a href="http://qunitjs.com/">QUnit</a> tests headlessly in <a href="http://phantomjs.org/">PhantomJS</a>.</li>
+        </ul>
+        
+        <p>To define which plugins are build into the distribution just edit <code>/_config.json</code> to fit your needs.</p>
+        
+        <h2 id="contributing">Contributing</h2>
+        
+        <p>The <a href="https://github.com/OwlFonk/OwlCarousel2/issues">issue tracker</a> is the preferred channel for bug reports, features requests and submitting pull requests.</p>
+        
+        <p><strong>Please do not use the issue tracker for personal support requests. Stack Overflow (<a href="http://stackoverflow.com/questions/tagged/owl-carousel"><code>owl-carousel</code></a>) is a better place to get help.</strong></p>
+        
+        <h3 id="bug-reports">Bug reports</h3>
+        
+        <p>A bug is a <strong>demonstrable problem</strong> that is caused by the code in the repository. Good bug reports are extremely helpful, so thanks!</p>
+        
+        <p>Guidelines for bug reports:</p>
+        
+        <ol>
+          <li>
+            <p>Use the GitHub issue search — check if the issue has already been reported.</p>
+          </li>
+          <li>
+            <p>Check if the issue has been fixed — try to reproduce it using the latest <code>develop</code> branch in the repository.</p>
+          </li>
+          <li>
+            <p>Isolate the problem — ideally create a reduced test case and a live example. This <a href="http://jsfiddle.net/eqbL6vLb/">JSFiddle</a> and this <a href="http://jsbin.com/xuxozu/1">JS Bin</a> are helpful templates you can fork or clone.</p>
+          </li>
+        </ol>
+        
+        <p>Example:</p>
+        
+        <blockquote>
+          <p>Short and descriptive example bug report title</p>
+        
+          <p>A summary of the issue and the browser/OS environment in which it occurs. If suitable, include the steps required to reproduce the bug.</p>
+        
+          <ol>
+            <li>This is the first step</li>
+            <li>This is the second step</li>
+            <li>Further steps, etc.</li>
+          </ol>
+        
+          <p><code>&lt;url&gt;</code> - a link to the reduced test case</p>
+        
+          <p>Any other information you want to share that is relevant to the issue being reported. This might include the lines of code that you have identified as causing the bug, and potential solutions (and your opinions on their merits).</p>
+        </blockquote>
+        
+        <h3 id="feature-requests">Feature requests</h3>
+        
+        <p>Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the project's developers of the merits of this feature. Please provide as much detail and context as possible.</p>
+        
+        <h3 id="pull-requests">Pull requests</h3>
+        
+        <p>Good pull requests are a fantastic help. They should remain focused in scope and avoid containing unrelated commits.</p>
+        
+        <p><strong>Please ask first</strong> before embarking on any significant pull request (e.g. implementing features, refactoring code, porting to a different language), otherwise you risk spending a lot of time working on something that the project's developers might not want to merge into the project.</p>
+        
+        <p>Adhering to the following process is the best way to get your work included in the project:</p>
+        
+        <ol>
+          <li><a href="http://help.github.com/fork-a-repo/">Fork</a> the project, clone your fork, and configure the remotes:</li>
+        </ol>
+        
+        <pre><code>```bash
+        git clone https://github.com/&lt;your-username&gt;/OwlCarousel2.git
+        cd OwlCarousel2
+        git remote add upstream https://github.com/OwlFonk/OwlCarousel2.git
+        ```
+        </code></pre>
+        
+        <ol>
+          <li>If you cloned a while ago, get the latest changes from upstream:</li>
+        </ol>
+        
+        <pre><code>```bash
+        git checkout develop
+        git pull [--rebase] upstream develop
+        ```
+        </code></pre>
+        
+        <ol>
+          <li>Create a new topic branch (off the main project <code>develop</code> branch) to contain your feature, change, or fix:</li>
+        </ol>
+        
+        <pre><code>```bash
+        git checkout -b &lt;topic-branch-name&gt;
+        ```
+        </code></pre>
+        
+        <ol>
+          <li>Build the distribution before committing to ensure your changes follow the coding standards and all build files are up to date.</li>
+        </ol>
+        
+        <pre><code>```bash
+        grunt dist
+        ```
+        </code></pre>
+        
+        <ol>
+          <li>
+            <p>Commit your changes in logical chunks. Please adhere to these <a href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">guidelines</a>. Use Git's <a href="https://help.github.com/articles/interactive-rebase">interactive rebase</a> feature to tidy up your commits before making them public.</p>
+          </li>
+          <li>
+            <p>Locally merge (or rebase) the upstream development branch into your topic branch:</p>
+          </li>
+        </ol>
+        
+        <pre><code>```bash
+        git pull [--rebase] upstream develop
+        ```
+        </code></pre>
+        
+        <ol>
+          <li>Push your topic branch up to your fork:</li>
+        </ol>
+        
+        <pre><code>```bash
+        git push origin &lt;topic-branch-name&gt;
+        ```
+        </code></pre>
+        
+        <ol>
+          <li><a href="https://help.github.com/articles/using-pull-requests/">Open a Pull Request</a> with a clear title and description against the <code>develop</code> branch.</li>
+        </ol>
+        
+        <p><strong>By submitting a patch, you agree to allow the project owner to
+        license your work under the terms of the <a href="/assets/plugins/owl.carousel/dist/LICENSE">MIT License</a>.</strong></p>
+        
+        <h2 id="license">License</h2>
+        
+        <p>The code and the documentation are released under the <a href="/assets/plugins/owl.carousel/dist/LICENSE">MIT License</a>.</p>
+      </div>
+      <footer>
+        <footer class='footer text-right'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-xs-6'>
+                © 2016. All rights reserved.
+              </div>
+              <div class='col-xs-6'>
+                <ul class='pull-right list-inline m-b-0'>
+                  <li>
+                    <a href='#'>About</a>
+                  </li>
+                  <li>
+                    <a href='#'>Help</a>
+                  </li>
+                  <li>
+                    <a href='#'>Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+    </div>
+    <!-- End Footer -->
+    <!-- jQuery -->
+    <script src='assets/js/jquery.min.js'></script>
+    <script src='assets/js/bootstrap.min.js'></script>
+    <script src='assets/js/jquery.slimscroll.js'></script>
+    <script src='assets/plugins/peity/jquery.peity.min.js'></script>
+    <!-- jQuery -->
+    <script src='assets/plugins/waypoints/lib/jquery.waypoints.js'></script>
+    <script src='assets/plugins/counterup/jquery.counterup.min.js'></script>
+    <script src='assets/plugins/morris/morris.min.js'></script>
+    <script src='assets/plugins/raphael/raphael-min.js'></script>
+    <script src='assets/plugins/jquery-knob/jquery.knob.js'></script>
+    <script src='assets/plugins/chartist/js/chartist.min.js'></script>
+    <script src='assets/plugins/chartist/js/chartist-plugin-tooltip.min.js'></script>
+    <script src='assets/pages/jquery.chartist.init.js'></script>
+    <script src='assets/pages/custom.js'></script>
+    <script src='assets/js/jquery.core.js'></script>
+    <script src='assets/js/jquery.app.js'></script>
+    <script src="../../../../javascripts/.js" type="text/javascript"></script><script src="../../../../javascripts/script.js?1476255799" type="text/javascript"></script>
+  </body>
+</html>

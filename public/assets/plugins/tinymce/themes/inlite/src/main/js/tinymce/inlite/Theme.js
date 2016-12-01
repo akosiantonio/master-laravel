@@ -1,0 +1,10 @@
+/**
+ * Theme.js
+ *
+ * Released under LGPL License.
+ * Copyright (c) 1999-2016 Ephox Corp. All rights reserved
+ *
+ * License: http://www.tinymce.com/license
+ * Contributing: http://www.tinymce.com/contributing
+ */
+define("tinymce/inlite/Theme",["global!tinymce.ThemeManager","global!tinymce.util.Delay","tinymce/inlite/ui/Panel","tinymce/inlite/ui/Buttons","tinymce/inlite/core/SkinLoader","tinymce/inlite/core/SelectionMatcher","tinymce/inlite/core/ElementMatcher","tinymce/inlite/core/Matcher","tinymce/inlite/alien/Arr","tinymce/inlite/core/PredicateId"],function(e,t,n,i,r,o,c,a,l,u){var m=function(e){var t=e.selection.getNode(),n=e.dom.getParents(t);return n},d=function(e,t,n,i){var r=function(n){return e.dom.is(n,t)};return{predicate:r,id:n,items:i}},s=function(e){var t=e.contextToolbars;return l.flatten([t?t:[],d(e,"img","image","alignleft aligncenter alignright")])},f=function(e,t){var n,i,r;return i=m(e),r=u.fromContextToolbars(t),n=a.match(e,[c.element(i[0],r),o.textSelection("text"),o.emptyTextBlock(i,"insert"),c.parent(i,r)]),n&&n.rect?n:null},h=function(e,t){var n=function(){var n=s(e),i=f(e,n);i?t.show(e,i.id,i.rect,n):t.hide()};return function(){e.removed||n()}},v=function(e,t){return function(){e.inForm()||t()}},y=function(e,n){var i=t.throttle(h(e,n),0),r=t.throttle(v(n,h(e,n)),0);e.on("blur hide ObjectResizeStart",n.hide),e.on("click",i),e.on("nodeChange mouseup",r),e.on("ResizeEditor ResizeWindow keyup",i),e.on("remove",n.remove),e.shortcuts.add("Alt+F10","",n.focus)},g=function(e,t){e.shortcuts.remove("meta+k"),e.shortcuts.add("meta+k","",function(){var n=s(e),i=i=a.match(e,[o.textSelection("quicklink")]);i&&t.show(e,i.id,i.rect,n)})},k=function(e,t){var n=e.settings.skin||"lightgray";return r.load(e,n,function(){y(e,t),g(e,t)}),{}},p=function(e){throw new Error(e)};return e.add("inlite",function(e){var t=new n;i.addToEditor(e,t);var r=function(){return e.inline?k(e,t):p("inlite theme only supports inline mode.")};return{renderUI:r}}),function(){}});
