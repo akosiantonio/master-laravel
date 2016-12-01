@@ -1,1 +1,0 @@
-var data={labels:["Bananas","Apples","Grapes"],series:[5,3,4]},sum=function(a,e){return a+e};new Chartist.Pie("#student-missing-assign",data,{labelInterpolationFnc:function(a){return Math.round(a/data.series.reduce(sum)*100)+"%"}});

@@ -1,1 +1,0 @@
-var lib="lib",run=lib+"/run",depend=run+"/depend",licenses=run+"/licenses",demo=lib+"/demo",test=lib+"/test",config=lib+"/config",cleanDirs=[lib],dependencies=[{name:"mcagar",repository:"buildrepo2",source:"mcagar.zip",targets:[{name:"module/*.js",path:test},{name:"depend/*.js",path:test}]}];

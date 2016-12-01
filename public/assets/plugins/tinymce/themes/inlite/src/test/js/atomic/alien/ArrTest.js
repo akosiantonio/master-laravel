@@ -1,1 +1,0 @@
-test("atomic/alien/ArrTest",["tinymce/inlite/alien/Arr"],function(t){var e=function(){assert.eq(t.flatten([1,2,[3,4,[5,6]],[7,8],9]),[1,2,3,4,5,6,7,8,9])};e()});

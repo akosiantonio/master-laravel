@@ -1,1 +1,0 @@
-var Countdown=require("./countdown.js"),NAME="countdown",DATA_ATTR="date";jQuery.fn.countdown=function(n){return $.each(this,function(t,o){var a=$(o);a.data(NAME)||(a.data(DATA_ATTR)&&(n.date=a.data(DATA_ATTR)),a.data(NAME,new Countdown(o,n)))})},module.exports=Countdown;

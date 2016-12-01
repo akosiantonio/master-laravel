@@ -1,1 +1,0 @@
-test("atomic/alien/UuidTest",["tinymce/inlite/alien/Uuid"],function(e){var i=function(){assert.eq(e.uuid("mce").indexOf("mce"),0),assert.eq(e.uuid("mce")!==e.uuid("mce"),!0)};i()});
